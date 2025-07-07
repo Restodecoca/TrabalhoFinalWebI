@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ChatEduca">
+    <title>ChatEduca - Assistente Educacional</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>ChatEduca</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="user-selector">
+                <select id="userType">
+                    <option value="student">Aluno</option>
+                    <option value="parent">Responsável</option>
+                </select>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Seu assistente educacional disponível 24/7</h2>
+                    <p>ChatEduca oferece apoio educacional para alunos do Ensino Fundamental II e seus responsáveis, com explicações claras e orientações práticas baseadas na BNCC.</p>
+                    <div class="hero-actions">
+                        <a href="chat.html" class="btn-primary">
+                            <i class="fas fa-comments"></i>
+                            Começar Chat Agora
+                        </a>
+                        <a href="#about" class="btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Saber Mais
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>Matemática, Português e Ciências</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Disponível 24/7</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>Para alunos e responsáveis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Sobre o ChatEduca</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-target"></i>
+                        <h3>Objetivo</h3>
+                        <p>Contribuir para a ODS 4 ampliando o acesso à educação de qualidade de forma inclusiva e acessível.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Solução</h3>
+                        <p>Chatbot educacional que apoia alunos e responsáveis com respostas rápidas e orientações de estudo.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Impacto</h3>
+                        <p>Fortalece a educação para todos, promovendo equidade e inclusão no aprendizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Recursos Principais</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Respostas Inteligentes</h3>
+                        <p>Explicações claras e objetivas baseadas na BNCC para dúvidas escolares</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Adaptação por Perfil</h3>
+                        <p>Linguagem adaptada para alunos ou responsáveis conforme necessário</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Materiais Complementares</h3>
+                        <p>Sugestões de vídeos, exercícios e resumos para reforço do aprendizado</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Acesso Fácil</h3>
+                        <p>Interface leve e simples, sem necessidade de login ou autenticação</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="tips">
+            <div class="container">
+                <h2>Dicas de Uso</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Para Alunos</h3>
+                        <ul>
+                            <li>Seja específico com suas dúvidas</li>
+                            <li>Use exemplos quando possível</li>
+                            <li>Aproveite os materiais complementares</li>
+                            <li>Pratique com os exercícios sugeridos</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Para Responsáveis</h3>
+                        <ul>
+                            <li>Peça orientações sobre como ajudar</li>
+                            <li>Solicite exercícios para praticar juntos</li>
+                            <li>Use as explicações para se atualizar</li>
+                            <li>Acompanhe o progresso do seu filho</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contato e Feedback</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Desenvolvido por:</h3>
+                        <ul>
+                            <li><i class="fas fa-user"></i> Anthony Quaresma</li>
+                            <li><i class="fas fa-user"></i> Gabriel Silva</li>
+                            <li><i class="fas fa-user"></i> Youri Costhaisme</li>
+                        </ul>
+                    </div>
+                    <div class="feedback-form">
+                        <h3>Envie seu Feedback</h3>
+                        <form id="feedbackForm">
+                            <div class="form-group">
+                                <label for="feedbackType">Tipo de Feedback:</label>
+                                <select id="feedbackType" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="suggestion">Sugestão</option>
+                                    <option value="bug">Problema/Bug</option>
+                                    <option value="content">Conteúdo</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackText">Sua Mensagem:</label>
+                                <textarea id="feedbackText" rows="4" placeholder="Descreva seu feedback..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Feedback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ChatEduca</h3>
+                    <p>Contribuindo para a ODS 4 - Educação de Qualidade</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li>Matemática</li>
+                        <li>Português</li>
+                        <li>Ciências</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informações</h3>
+                    <ul>
+                        <li>Baseado na BNCC</li>
+                        <li>Acesso gratuito</li>
+                        <li>Disponível 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChatEduca. Desenvolvido para fins educacionais.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="../JS/main.js"></script>
+    <script src="../JS/utils.js"></script>
+</body>
+</html>

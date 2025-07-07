@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ChatEduca">
+    <title>ChatEduca - Chat Educacional</title>
+    <link rel="stylesheet" href="../CSS/chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <button class="back-button" onclick="goBack()">← Voltar</button>
+            <h1>💬 ChatEduca</h1>
+            <p>Seu assistente educacional está pronto para ajudar!</p>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+                Olá! 👋 Eu sou o ChatEduca, seu assistente educacional para o <strong>Ensino Fundamental II</strong>.<br>
+                Estou aqui para ajudar você com suas dúvidas de <strong>Matemática</strong>, <strong>Português</strong> e <strong>Ciências</strong>.<br>
+                Posso explicar frações, porcentagens, gramática, células, sistema solar e muito mais!<br>
+                Faça sua primeira pergunta para começarmos!
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-questions">
+            <button class="quick-btn" onclick="sendQuickMessage('O que são frações?')">
+                � Frações
+            </button>
+            <button class="quick-btn" onclick="sendQuickMessage('Como calcular porcentagem?')">
+                � Porcentagem
+            </button>
+            <button class="quick-btn" onclick="sendQuickMessage('Como identificar sujeito e predicado?')">
+                📝 Gramática
+            </button>
+            <button class="quick-btn" onclick="sendQuickMessage('O que são células?')">
+                🔬 Células
+            </button>
+            <button class="quick-btn" onclick="sendQuickMessage('Como funciona o sistema solar?')">
+                � Sistema Solar
+            </button>
+        </div>
+
+        <div class="chat-input-area">
+            <input 
+                type="text" 
+                class="chat-input" 
+                id="chatInput" 
+                placeholder="Digite sua pergunta aqui..."
+                autocomplete="off"
+                maxlength="500"
+            >
+            <button class="send-button" id="sendButton" onclick="sendMessage()">
+                Enviar
+            </button>
+        </div>
+    </div>
+
+    <script src="../JS/knowledge-base.js"></script>
+    <script src="../JS/chat.js"></script>
+</body>
+</html>
