@@ -290,7 +290,12 @@ class ChatApp {
 
     goBack() {
         if (confirm('Tem certeza que deseja sair do chat?')) {
-            window.history.back();
+            // Try to go back in history, fallback to home page
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '../index.html';
+            }
         }
     }
 
