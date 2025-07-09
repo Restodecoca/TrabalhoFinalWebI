@@ -30,6 +30,13 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
+            <div class="user-info" id="userInfo" style="display: none;">
+                <span id="userName">Usuário</span>
+                <button class="logout-btn" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </button>
+            </div>
             <button class="mobile-menu-toggle" id="mobileMenuToggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -231,7 +238,25 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="JS/auth.js"></script>
     <script src="JS/main.js"></script>
     <script src="JS/utils.js"></script>
+    
+    <script>
+        // Mostrar informações do usuário quando autenticado
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                if (window.authManager && window.authManager.isAuthenticated()) {
+                    const userInfo = document.getElementById('userInfo');
+                    const userName = document.getElementById('userName');
+                    
+                    if (userInfo && userName) {
+                        userName.textContent = window.authManager.getUserDisplayName();
+                        userInfo.style.display = 'flex';
+                    }
+                }
+            }, 100);
+        });
+    </script>
 </body>
 </html>

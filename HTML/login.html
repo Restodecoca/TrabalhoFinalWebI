@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4A90E2">
+    <title>ChatEduca - Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>ChatEduca</h1>
+                <p>Seu assistente educacional</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Entrar
+                </button>
+            </form>
+
+            <div class="login-options">
+                <p>Não tem uma conta? <a href="#" id="registerLink">Registre-se aqui</a></p>
+            </div>
+
+            <div class="demo-credentials">
+                <h3>Credenciais de demonstração:</h3>
+                <p><strong>Aluno:</strong> aluno@demo.com / senha123</p>
+                <p><strong>Responsável:</strong> responsavel@demo.com / senha123</p>
+            </div>
+        </div>
+
+        <!-- Register Form (Hidden) -->
+        <div class="register-card" id="registerCard" style="display: none;">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>ChatEduca</h1>
+                <p>Criar nova conta</p>
+            </div>
+
+            <form class="register-form" id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Nome completo:</label>
+                    <input type="text" id="regName" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">E-mail:</label>
+                    <input type="email" id="regEmail" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">Senha:</label>
+                    <input type="password" id="regPassword" name="password" required minlength="6">
+                </div>
+
+                <div class="form-group">
+                    <label for="userType">Tipo de usuário:</label>
+                    <select id="userType" name="userType" required>
+                        <option value="">Selecione...</option>
+                        <option value="student">Aluno</option>
+                        <option value="parent">Responsável</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-register">
+                    <i class="fas fa-user-plus"></i>
+                    Registrar
+                </button>
+            </form>
+
+            <div class="login-options">
+                <p>Já tem uma conta? <a href="#" id="loginLink">Faça login aqui</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/auth.js"></script>
+</body>
+</html>
