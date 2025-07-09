@@ -711,3 +711,62 @@ section h2 {
         font-size: 0.8rem;
     }
 }
+
+/* Notification Animations */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Notification Styles */
+.notification-close {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.notification-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Header Scrolled State */
+.header.scrolled {
+    background: rgba(46, 125, 50, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Navigation Active State */
+.nav a.active {
+    color: #FFD700;
+}
+
+.nav a.active::after {
+    width: 100%;
+}
+
+/* Fade In Animation */
+.loaded .fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}

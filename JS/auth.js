@@ -310,7 +310,6 @@ class AuthManager {
     }
 }
 
-// Inicializar o gerenciador de autenticação quando a página carregar
 document.addEventListener('DOMContentLoaded', () => {
     window.authManager = new AuthManager();
 });

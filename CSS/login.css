@@ -180,7 +180,6 @@ body {
     color: #4A90E2;
 }
 
-/* Error and Success Messages */
 .message {
     padding: 12px;
     border-radius: 8px;
@@ -238,7 +237,6 @@ body {
     }
 }
 
-/* Animation for switching between forms */
 .fade-in {
     animation: fadeIn 0.3s ease-in;
 }
